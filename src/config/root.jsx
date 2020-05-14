@@ -21,7 +21,7 @@ const Root = () => (
       <Theme>
         <GlobalStyles />
 
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <StylesProvider injectFirst>
             <App />
           </StylesProvider>
